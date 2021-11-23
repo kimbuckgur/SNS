@@ -13,7 +13,7 @@ function Login_main() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <circle cx="260.399" cy="65.6006" r="260" fill="#72ADFF" />
+          <circle cx="260.399" cy="65.6001" r="260" fill="#72ADFF" />
         </svg>
       </S.login_page_onesurcle>
       <Login_box />
@@ -25,7 +25,7 @@ function Login_main() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <circle cx="108.801" cy="240" r="240" fill="#C8DFFF" />
+          <circle cx="108.8" cy="240" r="240" fill="#C8DFFF" />
         </svg>
       </S.login_page_twosurcle>
     </S.login_page>
