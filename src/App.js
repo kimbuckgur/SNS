@@ -6,8 +6,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      {/* <Login_main/> */}
-      <SignUP_main/>
+      <Login_main/>
+      {/* <SignUP_main/> */}
     </div>
   );
 }
