@@ -1,8 +1,7 @@
 import React from "react";
-
 import * as S from "./login_style";
 
-function Login_box_SignUpAria() {
+function Login_box_SignUp() {
   return (
     <S.login_box_sign_up>
       <S.login_box_sign_up_title>Hello, Friend!</S.login_box_sign_up_title>
@@ -14,4 +13,4 @@ function Login_box_SignUpAria() {
   );
 }
 
-export default Login_box_SignUpAria;
+export default Login_box_SignUp;

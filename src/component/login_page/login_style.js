@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const color = styled.span`
-  color: ${(props) => props.color};
-`;
+  color:${(props)=>props.color}
+`
 
 export const login_page = styled.div`
   width: 100%;
@@ -72,32 +72,6 @@ export const login_box_sign_up_text = styled.div`
   text-align: center;
   font-feature-settings: "pnum" on, "onum" on;
 `;
-export const login_box_info_box_input = styled.input`
-  margin-top: ${(props) => props.percent};
-
-  padding: 0px;
-  padding-left: 20px;
-  width: 440px;
-  height: 55px;
-
-  display: flex;
-  align-items: center;
-
-  &::-webkit-input-placeholder {
-    background-image: url(${(props) => props.imgsrc});
-    background-repeat: no-repeat;
-    background-position: 0 center;
-    background-size: auto;
-    padding: 3px 5%;
-  }
-
-  background-color: rgba(242, 242, 242, 1);
-  border: none;
-  border-radius: 4.50056px;
-  &:focus {
-    outline: none;
-  }
-`;
 
 export const login_box_sign_up_button = styled.button`
   cursor: pointer;
@@ -132,10 +106,34 @@ export const login_box_info_box_title = styled.p`
   font-weight: bold;
   color: rgba(73, 147, 250, 1);
   font-size: 38px;
-  margin-top: 60px;
+  margin-top: 100px;
   margin-bottom: 10px;
 `;
+export const login_box_info_input = styled.input`
+  margin-top:${(props)=>props.percent};
+  padding: 0px;
+  padding-left: 20px;
+  width: 450px;
+  height: 55px;
 
+  display: flex;
+  align-items: center;
+
+  &::-webkit-input-placeholder {
+    background-image: url(${(props) => props.imgsrc});
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: auto;
+    padding: 3px 5%;
+  }
+
+  background-color: rgba(242, 242, 242, 1);
+  border: none;
+  border-radius: 4.50056px;
+  &:focus {
+    outline: none;
+  }
+`;
 export const login_box_info_socialLogin_aria = styled.div`
   width: 185px;
   display: flex;
@@ -166,8 +164,6 @@ export const login_box_info_socialLogin_Google = styled.div`
   box-shadow: 0px 2.80044px 7.00111px rgba(0, 0, 0, 0.15);
 `;
 export const login_box_info_socialLogin_name = styled.p`
-  margin-bottom: 30px;
-
   font-family: "Noto Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -286,7 +282,7 @@ export const login_box_info_LoginButton = styled.div`
   font-family: "Noto Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 24.5039px;
   line-height: 18px;
   font-feature-settings: "pnum" on, "onum" on;
 

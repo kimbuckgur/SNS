@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
+export const color = styled.span`
+  color: ${(props) => props.color};
+`;
+
 export const display_flex = styled.div`
   display: flex;
 `;
-
-export const color = styled.span`
-  color:${(props)=>props.color};
-`
-
 
 export const Sign_page = styled.div`
   width: 100%;
@@ -115,8 +114,8 @@ export const SignUp_box_info_box_title = styled.p`
   font-family: "Noto Sans", sans-serif;
   font-weight: bold;
   color: rgba(73, 147, 250, 1);
-  margin-top: 60px;
-  margin-bottom: 17px;
+  margin-top: 75px;
+  margin-bottom: 20px;
 `;
 
 export const SignUp_box_info_box_Explanation = styled.p`
@@ -125,7 +124,7 @@ export const SignUp_box_info_box_Explanation = styled.p`
   font-family: "Noto Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 19.6062px;
+  font-size: 19px;
   line-height: 18px;
   font-feature-settings: "pnum" on, "onum" on;
   color: rgba(88, 88, 88, 1);
@@ -133,18 +132,18 @@ export const SignUp_box_info_box_Explanation = styled.p`
 
 export const SignUp_box_info_box_Explanation_line = styled.div`
   background-color: rgba(73, 147, 250, 1);
-  width: ${(props)=>props.width};
-  height: 2px;
+  width: ${(props) => props.percent};
+  height: 1px;
 
-  margin-top: 10px;
-  margin-bottom: ${(props)=>props.mar_b};
+  margin-top: 7px;
+  margin-bottom: 35px;
 `;
 
 export const SignUp_box_info_box_input1 = styled.input`
   margin-left: ${(props) => props.percent};
   padding: 0px;
   padding-left: 20px;
-  width: 250px;
+  width: 260px;
   height: 55px;
 
   display: flex;
@@ -171,7 +170,80 @@ export const SignUp_box_info_box_input2 = styled.input`
   margin-left: ${(props) => props.percent};
   padding: 0px;
   padding-left: 20px;
-  width: 540px;
+  width: 320px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+
+  &::-webkit-input-placeholder {
+    background-image: url(${(props) => props.imgsrc});
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: auto;
+    padding: 3px 5%;
+  }
+
+  background-color: rgba(242, 242, 242, 1);
+  border: none;
+  border-radius: 4.50056px;
+  &:focus {
+    outline: none;
+  }
+`;
+
+export const SignUp_box_info_box_genderOFF = styled.div`
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  font-feature-settings: "pnum" on, "onum" on;
+  color: rgba(111, 111, 111, 1);
+
+  width: 100px;
+  height: 55px;
+  margin-left: 20px;
+  margin-top: 20px;
+
+  border-radius: 5px;
+  background-color: rgba(242, 242, 242, 1);
+`;
+
+export const SignUp_box_info_box_genderON = styled.div`
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  font-feature-settings: "pnum" on, "onum" on;
+  color: white;
+
+  width: 100px;
+  height: 55px;
+  margin-left: 20px;
+  margin-top: 20px;
+
+  border-radius: 5px;
+  background-color: rgba(73, 147, 250, 1);
+`;
+
+export const SignUp_box_info_box_input3 = styled.input`
+  margin-top: 20px;
+  margin-left: ${(props) => props.percent};
+  padding: 0px;
+  padding-left: 10px;
+  width: 170px;
   height: 55px;
 
   display: flex;
@@ -194,12 +266,6 @@ export const SignUp_box_info_box_input2 = styled.input`
 `;
 
 export const SignUp_box_info_box_Teacher = styled.p`
-  cursor: pointer;
-
-  margin:0px;
-  margin-top:25px;
-  
-
   font-family: "Noto Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -207,6 +273,9 @@ export const SignUp_box_info_box_Teacher = styled.p`
   line-height: 18px;
   font-feature-settings: "pnum" on, "onum" on;
   color: rgba(88, 88, 88, 1);
+
+  margin: 0px;
+  margin-top: 40px;
 `;
 
 export const SignUp_box_info_SignUpButton = styled.div`
@@ -220,7 +289,7 @@ export const SignUp_box_info_SignUpButton = styled.div`
   font-family: "Noto Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 24.5039px;
   line-height: 18px;
   font-feature-settings: "pnum" on, "onum" on;
 
@@ -229,5 +298,5 @@ export const SignUp_box_info_SignUpButton = styled.div`
   width: 280px;
   height: 70px;
 
-  margin-top: 30px;
+  margin-top: 10px;
 `;
