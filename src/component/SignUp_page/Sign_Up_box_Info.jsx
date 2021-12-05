@@ -22,6 +22,8 @@ function Sign_Up_box_Info({ SignUpInfo, setSignUpInfo }) {
     else{
       copySignUpInfo.gender = "WOMEN";
     }
+    setSignUpInfo(copySignUpInfo);
+    console.log(SignUpInfo)
   }
   return (
     <S.SignUp_box_info_box>
@@ -52,14 +54,16 @@ function Sign_Up_box_Info({ SignUpInfo, setSignUpInfo }) {
           percent="0px"
           placeholder="학년"
           onChange={onChangeInfo}
-          onInput={(e)=>e.target.value = e.target.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1')}
+          onInput={(e)=>e.target.value = e.target.value.replace(/[^1-3.]/g, '').replace(/(\..*)\./g, '$1')}
+          maxLength="1"
         />
         <S.SignUp_box_info_box_input3
-          name="class"
+          name="classNum"
           percent="20px"
           placeholder="반"
           onChange={onChangeInfo}
           onInput={(e)=>e.target.value = e.target.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1')}
+          maxLength="2"
         />
         <S.SignUp_box_info_box_input3
           name="number"
@@ -67,6 +71,7 @@ function Sign_Up_box_Info({ SignUpInfo, setSignUpInfo }) {
           placeholder="번호"
           onChange={onChangeInfo}
           onInput={(e)=>e.target.value = e.target.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1')}
+          maxLength="2"
         />
       </S.display_flex>
       <S.display_flex>
@@ -75,7 +80,9 @@ function Sign_Up_box_Info({ SignUpInfo, setSignUpInfo }) {
           percent="0px"
           imgsrc={CALENDAR}
           placeholder="생년월일 ex) xxxx-xx-xx"
+          onInput={(e)=>e.target.value = e.target.value.replace(/[^0-9.-]/g, '')}
           onChange={onChangeInfo}
+          maxLength="10"
         /> 
         {TANDF ? <S.SignUp_box_info_box_genderON onClick={changeGender}>남자</S.SignUp_box_info_box_genderON> : <S.SignUp_box_info_box_genderOFF onClick={changeGender}>남자</S.SignUp_box_info_box_genderOFF>}
         {TANDF ?  <S.SignUp_box_info_box_genderOFF onClick={changeGender}>여자</S.SignUp_box_info_box_genderOFF> : <S.SignUp_box_info_box_genderON onClick={changeGender}>여자</S.SignUp_box_info_box_genderON>}

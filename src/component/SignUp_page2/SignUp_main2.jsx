@@ -1,6 +1,6 @@
 import React from "react";
-import SignUp_box from "./SignUp_box";
-import * as S from "./SignUp_style";
+import SignUp_box2 from "./SignUp_box2";
+import * as S from "./SignUp_style2";
 
 function Login_main({SignUpInfo,setSignUpInfo}) {
   return (
@@ -19,7 +19,7 @@ function Login_main({SignUpInfo,setSignUpInfo}) {
           />
         </svg>
       </S.Sign_page_onetriangle>
-      <SignUp_box SignUpInfo={SignUpInfo} setSignUpInfo={setSignUpInfo}/>
+      <SignUp_box2 SignUpInfo={SignUpInfo} setSignUpInfo={setSignUpInfo}/>
       <S.Sign_page_twotriangle>
         <svg
           width="243"

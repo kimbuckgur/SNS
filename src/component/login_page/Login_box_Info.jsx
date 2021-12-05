@@ -26,14 +26,14 @@ function Login_box_info() {
       <S.login_box_info_input
         placeholder="아이디"
         imgsrc={ID}
-        percent="40px"
+        percent="35px"
         name="id"
         onChange={onChangeInfo}
       />
       <S.login_box_info_input
         placeholder="비밀번호"
         imgsrc={PAS}
-        percent="45px"
+        percent="30px"
         type="password"
         name="password"
         onChange={onChangeInfo}

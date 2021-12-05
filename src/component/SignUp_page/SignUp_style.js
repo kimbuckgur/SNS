@@ -242,20 +242,12 @@ export const SignUp_box_info_box_input3 = styled.input`
   margin-top: 20px;
   margin-left: ${(props) => props.percent};
   padding: 0px;
-  padding-left: 10px;
-  width: 170px;
+  padding-left: 20px;
+  width: 160px;
   height: 55px;
 
   display: flex;
   align-items: center;
-
-  &::-webkit-input-placeholder {
-    background-image: url(${(props) => props.imgsrc});
-    background-repeat: no-repeat;
-    background-position: 0 center;
-    background-size: auto;
-    padding: 3px 5%;
-  }
 
   background-color: rgba(242, 242, 242, 1);
   border: none;
@@ -266,6 +258,7 @@ export const SignUp_box_info_box_input3 = styled.input`
 `;
 
 export const SignUp_box_info_box_Teacher = styled.p`
+  cursor: pointer;
   font-family: "Noto Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
